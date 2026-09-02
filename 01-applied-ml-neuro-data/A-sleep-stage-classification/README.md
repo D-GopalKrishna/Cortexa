@@ -2,6 +2,13 @@
 
 Classify sleep stages (Wake / N1 / N2 / N3 / REM) from EEG using Sleep-EDF.
 
+## Plan
+
+This project follows a phased arc from classical features through deep learning,
+attention/transformer models, efficiency-focused deployment, and finally EEG
+foundation models — see [plan/](plan/) for the full writeup, starting with
+[plan/00-overview.md](plan/00-overview.md).
+
 ## Why start here
 
 Clean labels, well-documented dataset, and the pipeline (filtering → features → classifier) transfers to motor imagery, seizure detection, and attention models.
@@ -24,11 +31,14 @@ Clean labels, well-documented dataset, and the pipeline (filtering → features 
 4. Subject-wise CV; confusion matrix figure for portfolio
 5. (Stretch) deep model on spectrograms vs. classical baseline
 
-## Layout (once you start coding)
+## Layout
 
 ```
-notebooks/   # exploration
-src/         # reusable pipeline
-data/        # local Sleep-EDF (gitignored)
+plan/        # phased plan, dataset/model research, metrics primer
+notebooks/   # one per phase — exploration
+server/      # reusable pipeline (data/, features/, models/, eval/, utils/)
+configs/     # per-experiment configs
+data/        # local datasets (gitignored): raw/, processed/, external/
 figures/     # portfolio plots
+results/     # running metrics comparison across phases
 ```

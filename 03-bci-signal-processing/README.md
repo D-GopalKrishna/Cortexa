@@ -4,12 +4,12 @@ Live and offline pipelines that turn EEG into control signals or state estimates
 
 ## Projects
 
-| Project | Hardware / data | Why it matters |
-|---------|-----------------|----------------|
-| [Focus / attention classifier](focus-attention-classifier/) ⭐ starter | Muse (or recorded EEG) | Product story (FocusAnalyze) |
-| [Blink / eye-artifact detector](blink-artifact-detector/) | OpenBCI or Muse | Real-time cleaning skill |
-| [SSVEP control demo](ssvep-control-demo/) | OpenBCI / Muse + stimulus | Frequency-tagging BCI classic |
-| [P300 speller](p300-speller/) | EEG + matrix stimulus | Attention-based typing demo |
+| # | Project | Hardware / data | Why it matters |
+|---|---------|-----------------|----------------|
+| A | [Focus / attention classifier](A-focus-attention-classifier/) ⭐ starter | Muse (or recorded EEG) | Product story (FocusAnalyze) |
+| B | [Blink / eye-artifact detector](B-blink-artifact-detector/) | OpenBCI or Muse | Real-time cleaning skill |
+| C | [SSVEP control demo](C-ssvep-control-demo/) | OpenBCI / Muse + stimulus | Frequency-tagging BCI classic |
+| D | [P300 speller](D-p300-speller/) | EEG + matrix stimulus | Attention-based typing demo |
 
 ## Shared skills to practice
 

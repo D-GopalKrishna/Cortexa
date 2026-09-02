@@ -1,10 +1,49 @@
+# OS / editor
 .DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Data — never commit datasets, anywhere in the repo
 **/data/
-**/__pycache__/
-**/.ipynb_checkpoints/
+# Keep Python packages named data/ (e.g. server/data/download.py)
+!**/server/data/
+!**/server/data/**
 *.edf
 *.fif
 *.npz
-.env
+*.npy
+*.h5
+*.hdf5
+
+# Python
+**/__pycache__/
+**/.ipynb_checkpoints/
+*.pyc
 .venv/
 venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Node / JS
+node_modules/
+dist/
+dist-ssr/
+build/
+*.local
+
+# Secrets
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Model checkpoints / large artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx

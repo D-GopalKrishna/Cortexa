@@ -6,6 +6,15 @@ Pull a subset of the FlyWire connectome and build a graph tool to explore / quer
 
 - [FlyWire](https://flywire.ai/) / Codex / public releases — start with a small neighborhood dump, not the full brain
 
+## Related — to explore
+
+- [Virtual Fly Brain](https://www.virtualflybrain.org/) — free, public anatomical/ontology
+  reference layer that cross-registers FlyWire and hemibrain data onto standard brain
+  templates (neuron identity, standard location, cross-paper naming). Complements this
+  project's raw wiring-graph queries rather than duplicating them; has a Python client
+  (`vfb_connect`, github.com/VirtualFlyBrain) worth trying once a subgraph is queryable
+  here — e.g. resolving what a queried neuron actually is.
+
 ## Suggested stack
 
 - Python, NetworkX or graph-tool, optional Neo4j for queries
