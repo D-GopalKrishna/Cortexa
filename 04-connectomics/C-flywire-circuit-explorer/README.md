@@ -6,14 +6,20 @@ Pull a subset of the FlyWire connectome and build a graph tool to explore / quer
 
 - [FlyWire](https://flywire.ai/) / Codex / public releases — start with a small neighborhood dump, not the full brain
 
-## Related — to explore
+## Related — prior real experience
 
 - [Virtual Fly Brain](https://www.virtualflybrain.org/) — free, public anatomical/ontology
   reference layer that cross-registers FlyWire and hemibrain data onto standard brain
   templates (neuron identity, standard location, cross-paper naming). Complements this
-  project's raw wiring-graph queries rather than duplicating them; has a Python client
-  (`vfb_connect`, github.com/VirtualFlyBrain) worth trying once a subgraph is queryable
-  here — e.g. resolving what a queried neuron actually is.
+  project's raw wiring-graph queries rather than duplicating them — has a Python client
+  (`vfb_connect`, github.com/VirtualFlyBrain) worth using once a subgraph is queryable
+  here, to resolve what a queried neuron actually is.
+- Already have real pipeline experience here, not just familiarity: prior contribution
+  to VFB's data pipeline scripts, specifically improving storage compression. See
+  [E-connectomics-data-pipeline-engineering](../E-connectomics-data-pipeline-engineering/)
+  for the project that extends that real work into a benchmarked, documented portfolio
+  piece — worth doing alongside or before this one, since it's the track's actual
+  demonstrated strength rather than a new skill being learned from scratch.
 
 ## Suggested stack
 

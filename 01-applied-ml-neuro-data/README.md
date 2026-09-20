@@ -16,6 +16,8 @@ project below — see [showcase/](showcase/) to run it locally.
 | C | [Seizure detection](C-seizure-detection/) | CHB-MIT Scalp EEG | Strong clinical / resume signal |
 | D | [fMRI cognitive state decoding](D-fmri-cognitive-state-decoding/) | Haxby | First fMRI project; famous, small |
 | E | [MEG preprocessing & information retrieval](E-meg-preprocessing-information-retrieval/) | MNE sample / OpenNeuro MEG | Sensor cleaning → evoked / decode pipeline |
+| F | [Disease vulnerability × gene expression](F-disease-vulnerability-gene-mapping/) | Allen Human Brain Atlas + GWAS Catalog | No lab needed; asks why diseases pick the regions they pick |
+| G | [In-vivo awake-behaving decoding](G-invivo-awake-behaving-decoding/) | IBL / Allen Neuropixels (real spikes) | Closest software-only substitute for in-vivo/awake-behaving experience |
 
 ## Shared skills to practice
 

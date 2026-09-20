@@ -1,0 +1,47 @@
+[
+  {
+    "num": "01",
+    "title": "Applied ML on Neuro Data",
+    "showcaseUrl": "http://localhost:5173",
+    "projects": [
+      { "id": "A", "title": "Sleep stage classification", "status": "in_progress" },
+      { "id": "B", "title": "Motor imagery classifier", "status": "planned" },
+      { "id": "C", "title": "Seizure detection", "status": "planned" },
+      { "id": "D", "title": "fMRI cognitive state decoding", "status": "planned" },
+      { "id": "E", "title": "MEG preprocessing & information retrieval", "status": "planned" }
+    ]
+  },
+  {
+    "num": "02",
+    "title": "Computational Neuroscience",
+    "showcaseUrl": null,
+    "projects": [
+      { "id": "A", "title": "Hodgkin–Huxley model", "status": "planned" },
+      { "id": "B", "title": "Spiking neural network simulation", "status": "planned" },
+      { "id": "C", "title": "Reservoir computing / liquid state machine", "status": "planned" },
+      { "id": "D", "title": "Neural mass model of EEG rhythms", "status": "planned" }
+    ]
+  },
+  {
+    "num": "03",
+    "title": "BCI / Signal Processing",
+    "showcaseUrl": null,
+    "projects": [
+      { "id": "A", "title": "Focus / attention classifier", "status": "planned" },
+      { "id": "B", "title": "Real-time blink / eye-artifact detector", "status": "planned" },
+      { "id": "C", "title": "SSVEP-based control demo", "status": "planned" },
+      { "id": "D", "title": "P300 speller", "status": "planned" }
+    ]
+  },
+  {
+    "num": "04",
+    "title": "Connectomics",
+    "showcaseUrl": null,
+    "projects": [
+      { "id": "A", "title": "Graph-theoretic analysis (C. elegans)", "status": "planned" },
+      { "id": "B", "title": "Tracing QA tool", "status": "planned" },
+      { "id": "C", "title": "FlyWire circuit explorer", "status": "planned" },
+      { "id": "D", "title": "Connectome comparison viewer", "status": "planned" }
+    ]
+  }
+]

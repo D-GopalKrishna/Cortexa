@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Neurofolio</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --panel: #12151c;
+    --border: #232733;
+    --text: #e6e8ee;
+    --muted: #8b93a7;
+    --accent: #6ee7b7;
+    --accent2: #7dd3fc;
+    --done: #6ee7b7;
+    --in-progress: #fbbf24;
+    --planned: #4b5563;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(1200px 600px at 20% -10%, #1a2030 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+    padding: 48px 24px 80px;
+  }
+  header { max-width: 1080px; margin: 0 auto 40px; }
+  h1 { font-size: 2rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+  header p { color: var(--muted); margin: 0; font-size: 0.95rem; }
+  main { max-width: 1080px; margin: 0 auto; display: grid; gap: 28px; }
+  .track {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+  }
+  .track-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .track-head h2 { font-size: 1.05rem; margin: 0; }
+  .track-head h2 span.num { color: var(--muted); font-weight: 500; margin-right: 8px; }
+  .track-launch {
+    font-size: 0.8rem;
+    color: var(--accent2);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  .track-launch:hover { border-color: var(--accent2); }
+  .track-launch.disabled { color: var(--muted); pointer-events: none; opacity: 0.5; }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 10px;
+  }
+  .project {
+    background: #0e1117;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    position: relative;
+  }
+  .project .letter {
+    display: inline-block;
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .project .title { font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; line-height: 1.3; }
+  .badge {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 2px 7px;
+    border-radius: 999px;
+    display: inline-block;
+  }
+  .badge.done { background: rgba(110,231,183,0.15); color: var(--done); }
+  .badge.in_progress { background: rgba(251,191,36,0.15); color: var(--in-progress); }
+  .badge.planned { background: rgba(75,85,99,0.25); color: var(--muted); }
+  footer { max-width: 1080px; margin: 40px auto 0; color: var(--muted); font-size: 0.8rem; }
+  code { background: #0e1117; padding: 1px 6px; border-radius: 4px; border: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Neurofolio</h1>
+  <p>Navigation hub for the neurotech portfolio — four tracks, each a self-contained set of projects.</p>
+</header>
+<main id="tracks"></main>
+<footer>
+  Data-driven from <code>tracks.json</code>. Each track's own showcase server (when running) is one click away — this page never proxies or hardcodes ports it doesn't own.
+</footer>
+<script>
+async function init() {
+  const res = await fetch("tracks.json");
+  const tracks = await res.json();
+  const root = document.getElementById("tracks");
+
+  for (const track of tracks) {
+    const section = document.createElement("section");
+    section.className = "track";
+
+    const head = document.createElement("div");
+    head.className = "track-head";
+    head.innerHTML = `<h2><span class="num">${track.num}</span>${track.title}</h2>`;
+
+    const launch = document.createElement("a");
+    launch.className = "track-launch" + (track.showcaseUrl ? "" : " disabled");
+    launch.href = track.showcaseUrl || "#";
+    launch.target = "_blank";
+    launch.rel = "noopener";
+    launch.textContent = track.showcaseUrl ? `Launch showcase →` : "No showcase yet";
+    head.appendChild(launch);
+    section.appendChild(head);
+
+    const grid = document.createElement("div");
+    grid.className = "projects";
+    for (const p of track.projects) {
+      const card = document.createElement("div");
+      card.className = "project";
+      card.innerHTML = `
+        <span class="letter">${p.id}</span>
+        <div class="title">${p.title}</div>
+        <span class="badge ${p.status}">${p.status.replace("_", " ")}</span>
+      `;
+      grid.appendChild(card);
+    }
+    section.appendChild(grid);
+    root.appendChild(section);
+  }
+}
+init();
+</script>
+</body>
+</html>

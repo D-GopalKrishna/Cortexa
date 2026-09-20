@@ -1,6 +1,15 @@
 # Neurotechnology Portfolio
 
-Four tracks for studying and shipping portfolio-ready neurotech projects. Each folder is a self-contained subproject with its own study notes and build path.
+Seven tracks for studying and shipping portfolio-ready neurotech projects. Each folder is a self-contained subproject with its own study notes and build path.
+
+No BCI hardware (OpenBCI, Muse, etc.) is available — projects that would
+normally use live acquisition are scoped to run on recorded/public datasets
+instead (see the hardware note in each affected project's README).
+
+Tracks 06 and 07 target specific gaps against real job postings (06:
+Neuralink Next Gen Neuroengineer; 07: a Stanford clinical/health data role)
+— see each README's scope note before assuming it's a general survey of the
+field.
 
 ## Tracks
 
@@ -10,6 +19,9 @@ Four tracks for studying and shipping portfolio-ready neurotech projects. Each f
 | 02 | [Computational Neuroscience](02-computational-neuroscience/) | Hodgkin–Huxley model |
 | 03 | [BCI / Signal Processing](03-bci-signal-processing/) | Focus / attention classifier |
 | 04 | [Connectomics](04-connectomics/) | Graph-theoretic analysis (C. elegans) or Tracing QA |
+| 05 | [Multimodal Biosensing](05-multimodal-biosensing/) | Multimodal emotion/state fusion (Galea-style) |
+| 06 | [Neurostimulation & Prosthetics](06-neurostimulation-and-prosthetics/) ⚠️ scoped from a Neuralink job posting | NEURON stimulation modeling |
+| 07 | [Clinical / Health Data Engineering](07-clinical-health-data-engineering/) ⚠️ scoped from a Stanford job posting | Healthcare data standards interop (EDF → FHIR) |
 
 ## Suggested study order
 
