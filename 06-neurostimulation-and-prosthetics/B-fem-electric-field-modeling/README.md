@@ -1,8 +1,8 @@
 # FEM Electric Field Modeling
 
 Model how current injected by a stimulating electrode actually spreads
-through tissue — the "modeling electric fields using finite element modeling
-(FEM)" bullet from the JD. This is the missing input to
+through tissue, using finite element modeling (FEM). This is the missing
+input to
 [A](../A-neuron-stimulation-modeling/): A assumes a field exists at the
 neuron; this project computes what that field actually looks like given
 electrode geometry and tissue properties.
@@ -19,8 +19,8 @@ you understand what FEM is approximating before you need the machinery.
 2. **FEM**: real tissue isn't infinite or homogeneous (electrode-tissue
    interface, anisotropic white matter, a finite bounded domain) — this is
    where FEM earns its place. Use an open-source FEM tool rather than
-   commercial software (COMSOL, which is the industry-standard tool
-   Neuralink almost certainly uses, is proprietary/expensive):
+   commercial software (COMSOL, the industry-standard tool in this space, is
+   proprietary/expensive):
    - [FEniCS](https://fenicsproject.org/) — general-purpose FEM, steeper
      learning curve, full control
    - [SimNIBS](https://simnibs.github.io/simnibs/) — purpose-built for

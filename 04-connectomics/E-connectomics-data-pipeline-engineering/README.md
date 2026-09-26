@@ -17,14 +17,14 @@ their derived segmentations/meshes are terabytes-to-petabytes, and pipeline
 storage/compression choices directly determine what's even queryable at
 interactive speed (relevant to C's "query a subgraph" experience too).
 
-## Why it also matters for the Neuralink-scoped track
+## Why it also matters for the stimulation track
 
 [06-neurostimulation-and-prosthetics](../../06-neurostimulation-and-prosthetics/)
-targets a Neuralink job posting; that role sits inside a team recording
-"high-dimensional" neural data at scale — the same storage/throughput
-pipeline problem, just electrophysiology instead of EM volumes. This project
-is the one place in the portfolio that demonstrates the data-engineering half
-of that problem directly, rather than only the modeling half.
+sits next to high-dimensional neural recording at scale — the same
+storage/throughput pipeline problem, just electrophysiology instead of EM
+volumes. This project is the one place in the repo that explores the
+data-engineering half of that problem directly, rather than only the modeling
+half.
 
 ## Idea
 

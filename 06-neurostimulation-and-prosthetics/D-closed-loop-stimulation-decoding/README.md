@@ -3,8 +3,8 @@
 Wire a decoder and a stimulator into one loop: read simulated neural state,
 decide a stimulation pattern, apply it, read the resulting state, repeat.
 Every other project in this repo (and tracks A-C in this one) is either
-read-only or write-only — this is the only project that closes the loop,
-directly targeting the JD's "closed-loop brain-computer interface" bullet.
+read-only or write-only — this is the only project that closes the loop, the
+defining feature of a bidirectional brain-computer interface.
 
 ## Prerequisite
 

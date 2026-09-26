@@ -1,10 +1,10 @@
 # In-Vivo Awake-Behaving Decoding
 
 Decode behavior from real spike data recorded in awake, behaving animals —
-the closest software-only substitute for the "in-vivo electrophysiology,
-awake behaving recordings" requirement in
-[06-neurostimulation-and-prosthetics](../../06-neurostimulation-and-prosthetics/)'s
-source job posting. Everything else in this repo is EEG/fMRI/MEG (surface,
+the closest software-only substitute for the in-vivo electrophysiology and
+awake-behaving recordings that
+[06-neurostimulation-and-prosthetics](../../06-neurostimulation-and-prosthetics/)
+depends on. Everything else in this repo is EEG/fMRI/MEG (surface,
 human, low channel count); this project is the first with real single/multi-
 unit spikes from an animal performing a task.
 
@@ -46,9 +46,9 @@ glossed over; see the parent track's README for the full caveat.
 5. (Stretch) compare decoding accuracy across brain regions if the dataset
    spans several — which region carries the most information about the task?
 6. (Stretch) raw spike sorting with `spikeinterface` on one session's raw
-   data instead of using pre-sorted units, to see what the "recording"
-   half of the JD's "recording and stimulation experiments" bullet actually
-   involves upstream of the clean spike trains used above
+   data instead of using pre-sorted units, to see what the "recording" half
+   of a recording-and-stimulation experiment actually involves upstream of
+   the clean spike trains used above
 
 ## Layout
 

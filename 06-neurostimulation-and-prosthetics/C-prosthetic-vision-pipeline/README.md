@@ -2,10 +2,10 @@
 
 End-to-end software pipeline for a visual prosthesis: camera → machine vision
 preprocessing → phosphene-pattern simulation (what an implant user would
-actually perceive) → optionally driven by real eye tracking. Directly targets
-the JD's "end-to-end hardware and software solutions for prosthetic vision,
-including machine vision algorithms, smart glasses, and eye tracking
-technology" — fully buildable in software, no implant or lab required.
+actually perceive) → optionally driven by real eye tracking. This is the
+software half of a real prosthetic vision system — machine vision algorithms,
+smart glasses, eye tracking — fully buildable in software, no implant or lab
+required.
 
 ## Why this shape
 
@@ -15,7 +15,7 @@ one triggered by one electrode. The entire engineering problem is: given a
 normal camera image, what should each electrode do so the *perceived* sparse
 phosphene pattern is as useful as possible (edges, faces, obstacles) rather
 than a low-res blurry mess. That preprocessing-for-a-constrained-output
-problem is the actual machine vision skill this role wants.
+problem is the actual machine vision skill worth building here.
 
 ## Suggested stack
 

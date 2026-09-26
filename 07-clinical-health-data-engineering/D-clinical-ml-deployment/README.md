@@ -3,8 +3,8 @@
 Take a trained model (01-A's sleep-stage classifier, or the disease/region
 model from elsewhere in the portfolio) and actually deploy it: a served
 endpoint, versioning, monitoring for drift, and a simulated EHR-integration
-call pattern — the "deploying ML models into production or clinical
-settings, including model serving, monitoring, and EHR integration" bullet.
+call pattern — what deploying an ML model into a production or clinical
+setting actually involves: model serving, monitoring, and EHR integration.
 Everything else in this repo stops at a notebook metric; this is the only
 project that asks what happens after the model is "done."
 

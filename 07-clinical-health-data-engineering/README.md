@@ -1,22 +1,20 @@
 # Clinical / Health Data Engineering
 
-## ⚠️ Scope note: this track is derived from a Stanford job posting
+## ⚠️ Scope note: this track is deliberately narrow
 
-Scoped directly from the requirements pasted from a Stanford job listing
-(careersearch.stanford.edu, job id 200677) — the posting's own title/team
-couldn't be fetched automatically (JS-rendered page), so this track is built
-from the requirement bullets the user provided, not the full job description.
-If the exact team/scope matters, re-check the live listing before treating
-this as a complete picture.
+This track is scoped around a short list of applied clinical-data skills
+rather than as a survey of the field — it follows the bullets below and
+nothing else, so treat it as a focused study path, not a complete picture of
+health data engineering.
 
-Requirement bullets this track targets:
+Skills this track targets:
 - Healthcare data standards and formats — EDF/EDF+, DICOM, HL7/FHIR, OMOP/OHDSI
 - Large physiological time-series data (EEG, PSG, ECG, actigraphy, wearable streams)
 - HIPAA, IRB, and data use agreement (DUA) requirements for human subjects research data
 - ML models deployed to production/clinical settings — model serving, monitoring, EHR integration
 - Workflow orchestration (Airflow, Prefect, Nextflow, Snakemake, or similar)
 
-## Why this track is different from the rest of the portfolio
+## Why this track is different from the rest of the repo
 
 Every other track answers "can you model/decode a neural signal?" This one
 answers a completely different question: "can you move that signal through a
@@ -24,7 +22,7 @@ real health-data system?" — the standards it must speak (FHIR, OMOP, DICOM),
 the governance it must respect (HIPAA/IRB/DUA), and the infrastructure that
 gets a model from a notebook into something a clinician's system can call.
 None of that is neuroscience — it's data engineering with healthcare-specific
-constraints, which is exactly what the requirement list above describes.
+constraints, which is exactly what the skill list above describes.
 
 ## Built on existing work, not from scratch
 
@@ -37,12 +35,12 @@ than starting a new domain cold.
 
 ## Projects
 
-| # | Project | Core skill | Requirement bullet it targets |
+| # | Project | Core skill | Skill it builds |
 |---|---------|-----------|-------------------------------|
-| A | [Healthcare data standards interop](A-healthcare-data-standards-interop/) ⭐ starter | EDF/EDF+ parsing, FHIR resource modeling, DICOM basics | "Healthcare data standards and formats — EDF/EDF+, DICOM, HL7/FHIR, OMOP/OHDSI" |
-| B | [OMOP/OHDSI CDM mapping](B-omop-ohdsi-mapping/) | Common Data Model ETL | "OMOP/OHDSI"; large-scale observational health data |
-| C | [Workflow orchestration pipeline](C-workflow-orchestration-pipeline/) | Airflow/Prefect/Snakemake DAGs | "Workflow orchestration (Airflow, Prefect, Nextflow, Snakemake, or similar)" |
-| D | [Clinical ML deployment](D-clinical-ml-deployment/) | Model serving, monitoring, EHR integration | "Deploying ML models into production or clinical settings ... model serving, monitoring, and EHR integration" |
+| A | [Healthcare data standards interop](A-healthcare-data-standards-interop/) ⭐ starter | EDF/EDF+ parsing, FHIR resource modeling, DICOM basics | Healthcare data standards and formats — EDF/EDF+, DICOM, HL7/FHIR, OMOP/OHDSI |
+| B | [OMOP/OHDSI CDM mapping](B-omop-ohdsi-mapping/) | Common Data Model ETL | OMOP/OHDSI; large-scale observational health data |
+| C | [Workflow orchestration pipeline](C-workflow-orchestration-pipeline/) | Airflow/Prefect/Snakemake DAGs | Workflow orchestration (Airflow, Prefect, Nextflow, Snakemake, or similar) |
+| D | [Clinical ML deployment](D-clinical-ml-deployment/) | Model serving, monitoring, EHR integration | Deploying ML models into production or clinical settings — model serving, monitoring, EHR integration |
 
 ## Suggested order
 

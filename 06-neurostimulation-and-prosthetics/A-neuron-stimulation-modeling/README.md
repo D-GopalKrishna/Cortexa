@@ -4,9 +4,9 @@ Move from the single-compartment Hodgkin-Huxley model
 ([02-A](../../02-computational-neuroscience/A-hodgkin-huxley-model/)) to a real
 multi-compartment cable model in NEURON, then inject *extracellular*
 stimulation (mimicking an implanted electrode) instead of just an intracellular
-current step — this is the literal "computational models of, and encoding
-strategies for, electrical stimulation" bullet from the JD, and names NEURON
-directly.
+current step — this is the core of computational models of, and encoding
+strategies for, electrical stimulation, and NEURON is the standard tool for
+it.
 
 ## Why this one first
 

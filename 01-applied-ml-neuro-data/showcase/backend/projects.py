@@ -29,7 +29,7 @@ PROJECTS = [
         "slug": "C-seizure-detection",
         "title": "Seizure detection",
         "dataset": "CHB-MIT Scalp EEG",
-        "blurb": "Strong clinical / resume signal — detecting seizure onset from scalp EEG.",
+        "blurb": "Clinically motivated — detecting seizure onset from scalp EEG.",
         "status": "planned",
         "starter": False,
     },

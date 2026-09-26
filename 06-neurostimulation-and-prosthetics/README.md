@@ -1,25 +1,24 @@
 # Neurostimulation & Prosthetics
 
-## ⚠️ Scope note: this track is derived from a Neuralink job posting
+## ⚠️ Scope note: this track is deliberately narrow
 
-This track exists to close a specific, named gap: the "Neuroengineer, Next Gen"
-role at Neuralink requires computational modeling of electrical stimulation
-(NEURON, FEM electric fields), a prosthetic vision pipeline (machine vision +
-smart glasses + eye tracking), and closed-loop bidirectional BCI — none of
-which the rest of this portfolio (all read-only: EEG/fMRI/MEG → classify)
-touches. The track's scope, project boundaries, and vocabulary below are
-shaped directly by that job description, not by a general survey of the
-stimulation/prosthetics literature. Treat it as "build fluency against a real
-industry bar," not as original research scoping.
+This track exists to close a specific, named gap in my own study: computational
+modeling of electrical stimulation (NEURON, FEM electric fields), a prosthetic
+vision pipeline (machine vision + smart glasses + eye tracking), and
+closed-loop bidirectional BCI — none of which the rest of this repo (all
+read-only: EEG/fMRI/MEG → classify) touches. The scope, project boundaries,
+and vocabulary below follow that short list of applied skills, not a general
+survey of the stimulation/prosthetics literature. Treat it as "build fluency
+in how this is actually done," not as original research scoping.
 
-The role also requires in-vivo electrophysiology, awake behaving recordings,
+This area also leans on in-vivo electrophysiology, awake behaving recordings,
 and hands-on instrumentation — those are **not** solvable by solo software
 projects and are called out as an honest gap rather than faked here. See
 [01-applied-ml-neuro-data/G-invivo-awake-behaving-decoding](../01-applied-ml-neuro-data/G-invivo-awake-behaving-decoding/)
 for the closest software-only substitute (real public spike data, not a lab
 session).
 
-## Why this track is different from the rest of the portfolio
+## Why this track is different from the rest of the repo
 
 Every other track in this repo *reads* brain signals (decode EEG/fMRI/MEG into
 a label). This track *writes* to the brain (model what stimulation does to
@@ -28,12 +27,12 @@ different half of the BCI problem entirely.
 
 ## Projects
 
-| # | Project | Core skill | JD bullet it targets |
+| # | Project | Core skill | Skill it builds |
 |---|---------|-----------|----------------------|
-| A | [NEURON stimulation modeling](A-neuron-stimulation-modeling/) ⭐ starter | Multi-compartment cable modeling, extracellular stimulation | "Computational models of ... electrical stimulation"; "NEURON modeling environment" |
-| B | [FEM electric field modeling](B-fem-electric-field-modeling/) | Volume-conductor / finite element modeling of current spread | "Modeling electric fields using finite element modeling (FEM)" |
-| C | [Prosthetic vision pipeline](C-prosthetic-vision-pipeline/) | Machine vision, phosphene simulation, eye tracking | "End-to-end hardware and software solutions for prosthetic vision ... machine vision algorithms, smart glasses, and eye tracking" |
-| D | [Closed-loop stimulation-decoding](D-closed-loop-stimulation-decoding/) | Bidirectional BCI loop | "Closed-loop brain-computer interface" |
+| A | [NEURON stimulation modeling](A-neuron-stimulation-modeling/) ⭐ starter | Multi-compartment cable modeling, extracellular stimulation | Computational models of electrical stimulation; the NEURON modeling environment |
+| B | [FEM electric field modeling](B-fem-electric-field-modeling/) | Volume-conductor / finite element modeling of current spread | Modeling electric fields using finite element modeling (FEM) |
+| C | [Prosthetic vision pipeline](C-prosthetic-vision-pipeline/) | Machine vision, phosphene simulation, eye tracking | End-to-end prosthetic vision: machine vision algorithms, smart glasses, and eye tracking |
+| D | [Closed-loop stimulation-decoding](D-closed-loop-stimulation-decoding/) | Bidirectional BCI loop | Closed-loop brain-computer interfaces |
 
 ## Suggested order
 
@@ -56,4 +55,4 @@ industry-standard tool. Watch base → advanced, in parallel with A-D.
 No hardware, no animals, no wet lab. Every project here is a simulation or a
 software-only pipeline. That gets you to "can model, reason about, and speak
 fluently about stimulation and closed-loop BCI" — it does not substitute for
-actual in-vivo experience, which the JD explicitly lists as required/preferred.
+actual in-vivo experience, which this work genuinely depends on in practice.
